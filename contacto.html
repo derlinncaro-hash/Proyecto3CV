@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Derlin Caro - Desarrollador de Software</title>
+  <meta name="description" content="Contacta a Derlin Yissel Caro Bautista: formulario de contacto.">
+  <meta name="keywords" content="HTML, MySQL, Java, Spring Boot, Git, GitHub, UML, portafolio, desarrollador, SENA">
+  <meta name="author" content="Derlin Yissel Caro Bautista">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto | Derlin Caro">
+  <meta property="og:description" content="Contacta a Derlin Yissel Caro Bautista: formulario de contacto.">
+  <meta property="og:locale" content="es_CO">
+</head>
+<body>
+  <header>
+    <a href="index.html">Derlin Caro</a>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+    <p>Contactame y te responderé lo antes posible.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Formulario de contacto</legend>
+
+        <p>
+          <label for="nombre">Nombre</label><br>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+        <p>
+          <label for="correo">Correo electrónico</label><br>
+          <input type="email" id="correo" name="correo" required>
+        </p>
+        <p>
+          <label for="asunto">Asunto</label><br>
+          <select id="asunto" name="asunto">
+            <option value="consulta">Consulta</option>
+            <option value="proyecto">Propuesta de proyecto</option>
+            <option value="otro">Otro</option>
+          </select>
+        </p>
+        <p>
+          <label for="mensaje">Mensaje</label><br>
+          <textarea id="mensaje" name="mensaje" rows="6" cols="40" required></textarea>
+        </p>
+        <button type="submit">Enviar</button>
+        <delete><button type="reset">Borrar</button></delete>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Derlin Yissel Caro Bautista </p>
+  </footer>
+</body>
+</html>
