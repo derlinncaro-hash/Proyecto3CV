@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+main > h1,
+main > p {
+  flex: 1 1 100%;
+  margin: 0;
+}
+
+main > p {
+  color: var(--muted);
+}
+
+main > section {
+  display: flex;
+  flex: 1 1 280px;
+}
+
+main > section article {
+  flex: 1;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+main > section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+main > section p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Artículos | Derlin Caro - Desarrollador de Software</title>
+
   <meta name="description" content="Artículos y notas de aprendizaje sobre desarrollo de software y HTML.">
   <meta name="keywords" content="HTML, MySQL, Java, Spring Boot, Git, GitHub, UML, portafolio, desarrollador, SENA">
   <meta name="author" content="Derlin Yissel Caro Bautista">
   <meta name="robots" content="index, follow">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Artículos | Derlin Caro">
   <meta property="og:description" content="Artículos y notas de aprendizaje sobre desarrollo de software y HTML.">
   <meta property="og:locale" content="es_CO">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/articulos.css">
 </head>
+
 <body>
+
+  <!-- Encabezado y navegación -->
   <header>
     <a href="index.html">Derlin Caro</a>
+
     <nav aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="articulos.html">Artículos</a></li>
+        <li><a href="articulos.html" aria-current="page">Artículos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Contenido principal -->
   <main>
-    <h1>Artículos</h1>
+    <section id="articulos">
+      <h1>Artículos</h1>
 
-    <article>
-      <header>
-        <h2>Qué es el HTML semántico</h2>
-        <p>Fecha limite <time datetime="2026-10-08">8 de octubre de 2026</time></p>
-      </header>
-      <p>El HTML semántico usa etiquetas como header, nav, main y footer que indican qué es cada parte de la página.</p>
-      
-    </article>
+      <article class="articulo">
+        <header>
+          <h2>Qué es el HTML semántico</h2>
+          <p>
+            Publicado el
+            <time datetime="2026-10-08">8 de octubre de 2026</time>
+          </p>
+        </header>
 
-    <article>
-      <header>
-        <h2>Primeros pasos con Git y GitHub</h2>
-        <p>Publicado <time datetime="2026-10-08">8 de octubre de 2026</time></p>
-      </header>
-      <p>Git permite guardar el historial de cambios de un archivo de forma local y remota.</p>
-      
-    </article>
+        <p>
+          El HTML semántico utiliza etiquetas como
+          <code>header</code>, <code>nav</code>, <code>main</code>
+          y <code>footer</code> para identificar la función de
+          cada parte de una página web. Esto ayuda a organizar
+          el contenido y facilita su comprensión.
+        </p>
+      </article>
 
-    <aside>
+      <article class="articulo">
+        <header>
+          <h2>Primeros pasos con Git y GitHub</h2>
+          <p>
+            Publicado el
+            <time datetime="2026-10-08">8 de octubre de 2026</time>
+          </p>
+        </header>
+
+        <p>
+          Git permite llevar un historial de los cambios realizados
+          en un proyecto. GitHub permite alojar repositorios en
+          internet y colaborar con otras personas en el desarrollo
+          de software.
+        </p>
+      </article>
+    </section>
+
+    <!-- Temas relacionados -->
+    <aside id="temas">
       <h2>Temas</h2>
+
       <ul>
-        <li>HTML</li>
-        <li>Git</li>
+        <li>HTML y CSS</li>
+        <li>Git y GitHub</li>
         <li>Bases de datos</li>
+        <li>Desarrollo de software</li>
       </ul>
     </aside>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2026 Derlin Yissel Caro Bautista.</p>
   </footer>
+
 </body>
+
 </html>
